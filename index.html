@@ -3,31 +3,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
-    <header class="bg-gray-800 text-white p-4" style=" display: flex; justify-content: space-between; align-items: center;">
+<body class="bg-gray-100">
+    <header class="bg-gray-100 p-4" style=" display: flex; justify-content: space-between; align-items: center;">
             <div class="logo" style="display: flex; align-items: center;">
-                <img src="img/logo.png" alt="Logo" class="h-10">
-                <h1 class="text-2xl font-bold text-white hover:text-gray-400">Tbiz Portfolio</h1>
+                <img src="img/logo.png" alt="Logo" class="h-10" style="margin-right: 10px;">
+                <h1 class="text-2xl font-bold text-gray-800 hover:text-gray-400">Tbiz Portfolio</h1>
             </div>
             <nav class="nav mr-5" style="display: flex; align-items: center;">
                 <ul style="display: flex; list-style: none; gap: 20px;">
-                    <li><a href="#home" class="text-white hover:text-gray-400">Home</a></li>
-                    <li><a href="#projects" class="text-white hover:text-gray-400">Projects</a></li>
-                    <li><a href="#contact" class="text-white hover:text-gray-400">Contact</a></li>
+                    <li style=""><a href="#home" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Home</a></li>
+                    <li><a href="#resume" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Resume</a></li>
+                    <li><a href="#projects" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Projects</a></li>
+                    <li><a href="#services" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Services</a></li>
+                    <li><a href="#contact" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Contact</a></li>
                 </ul>
             </nav>
     </header>
-    <body class="container mx-auto">
-        <section style="background-image: url(img/portfolio.jpg); background-size: cover; height: 100vh;">
-            <h1 style="color: white; text-align: center; padding-top: 20%;">My Projects</h1>
-            <h2 id="home">About Me</h2>
-            <p class="font-serif underline text-blue-700">Hello! I'm a web developer with a passion for creating interactive and user-friendly applications. I love coding and learning new technologies.</p>
-
-            <h1 class="font-bold underline text-amber-300">My portfolio template</h1>
+    <main class="my-3">
+        <section style="background-image: url(img/portfolio.jpg); background-size:cover; height: 100vh; position:relative;">
+            <h1 class="text-4xl font-serif font-bold" style="color: rgb(64, 60, 77); text-align: right; padding-top: 20%; position: absolute; left: 15px; top: 0px;">Tobi Ogungbe</h1>
+            <h5 class="text-left text-gray-800" style="position: absolute; left: 15px; top: 350px; width: 400px; height: 200px;">I am a Freelance Software Developer, Data Scientist</h5>
+            <p class="font-serif text-gray-800" style="position: absolute; left: 15px; top: 380px; width: 450px; height: 200px;">Hello! I'm a web developer with a passion for creating interactive and user-friendly applications. I love coding and learning new technologies.</p>
+        </section>
+        <section class="bg-gray-200 py-8 my-3" id="summary" style="display: flex; justify-content: center; align-items: center;">
+            <div class="px-4 bg-gray-800 text-center" style="max-width: 1000px;">
+                <h1 class="py-3 font-sans text-2xl font-bold text-white">Summary</h1>
+                <p class="font-sans text-white">An IT Business Analyst and Data Scientist with multiple years of experience delivering business solutions that improve the service level performance of different government entities. My exposure to the Chartered Financial Analyst Program has given me insights into the business world, which further enhances my ability to apply IT-related procedures in solving real business problems. As a data scientist, I have had the opportunity of using statistical procedures to show breaches in project contracts. In cases that require predictions, applied business logic in developing machine learning algorithms that more often achieve higher accuracy rates. I am currently expanding my knowledge; exploring how to design, develop, deploy, and manage robust, secure, scalable, highly available and highly dynamic cloud solutions that can be used to drive business objectives</p>
+            </div>
+        </section>
+        <section class="my-4" id="">
+            <h1 class="text-center text-3xl font-serif font-bold">Bio Data</h1>
+            <h4 class="text-center text-1xl font-serif font-bold">Software Developer</h4>
+            <div class="py-8 my-3" style="display: flex; justify-content: flex-start; align-items: center;">
+                <div class="max-w-sm rounded-lg shadow-lg  px-5 mr-10" style="width: 300px; height: 300px; display: flex; justify-content: center; align-items: center;">
+                    <img src="img/Profile-Picture.jpg" alt="Profile Picture" class="w-auto h-auto ml-7" style="border-radius: 15px;">
+                </div>
+                <div class="px-4" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div class="max-w-100 mx-10">
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3">&#10004;</span><strong>Date of Birth: </strong>May 16 1983</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Wesbite: </strong>www.example.com</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Phone: </strong>+234 8060876919</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Address: </strong>Ikeja, Lagos State</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Country: </strong>Nigeria</h4>
+                    
+                </div>
+                <div class="max-w-200 mx-10 text-left" style="border-radius: 5px;">
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3">&#10004;</span><strong>Age: </strong>42</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Qualifications: </strong>Bsc. Computer Science, MSc. Software Engineering</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Exams & Certifications: </strong>CFA Exam (Passed L1 & L2), GCloud, DSBA PGD, CITP - Nigeria.</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Email: </strong>oluwatobi_ogungbe@outlook.com</h4>
+                    <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Freelance: </strong>Available
+                    </h4>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Skill Sections -->
+         <!--HTML CSS Skill-->
+        <section class="my-4 bg-blue-100 py-10" id="skills">
+            <h1 class="text-2xl px-5 font-bold font-serif text-center py-5">Skills</h1>
+            <p class="font-serif text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae, aspernatur nostrum recusandae eligendi ex est aperiam provident doloribus totam.</p>
+            <div class="flex flex-row justify-evenly mx-10 my-5">
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">HTML</span>
+                        <span class="text-sm font-medium text-black dark:text-white">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">CSS -Tailwind, Bootstrap</span>
+                        <span class="text-sm font-medium text-black dark:text-white">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <!--HTML CSS Skill-->
+            <div class="flex flex-row justify-evenly mx-10 my-5">
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">R - Data Science Programming</span>
+                        <span class="text-sm font-medium text-black dark:text-white">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">BI - Tools (Tableau, Zoho)</span>
+                        <span class="text-sm font-medium text-black dark:text-white">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            <!--HTML CSS Skill-->
+            <div class="flex flex-row justify-evenly mx-10 my-5">
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">SQL & NoSQL</span>
+                        <span class="text-sm font-medium text-black dark:text-white">80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">Data Modelling</span>
+                        <span class="text-sm font-medium text-black dark:text-white">60%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            <!--HTML CSS Skill-->
+            <div class="flex flex-row justify-evenly mx-10 my-5">
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">Financial Statement Analysis</span>
+                        <span class="text-sm font-medium text-black dark:text-white">60%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">Statistics Analysis</span>
+                        <span class="text-sm font-medium text-black dark:text-white">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            <!--HTML CSS Skill-->
+            <div class="flex flex-row justify-evenly mx-10 my-5">
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">Javascript & Javascript Frameworks</span>
+                        <span class="text-sm font-medium text-black dark:text-white">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="w-full px-5">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-black dark:text-white">Agile Methods</span>
+                        <span class="text-sm font-medium text-black dark:text-white">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="" id="resume">
             
         </section>
-    </body>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
