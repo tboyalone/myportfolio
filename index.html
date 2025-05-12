@@ -7,41 +7,71 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="bg-white">
-    <header class="bg-white p-4" style=" display: flex; justify-content: space-between; align-items: center;">
-            <div class="logo" style="display: flex; align-items: center;">
-                <img src="img/logo.png" alt="Logo" class="h-10" style="margin-right: 10px;">
-                <h1 class="text-2xl font-bold text-gray-800 hover:text-gray-400">Tbiz Portfolio</h1>
-            </div>
-            <nav class="nav mr-5" style="display: flex; align-items: center;">
-                <ul style="display: flex; list-style: none; gap: 20px;">
-                    <li class="mr-10"><a href="#home" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Home</a></li>
-                    <li class="mr-10"><a href="#resume" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Resume</a></li>
-                    <li class="mr-10"><a href="#projects" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Projects</a></li>
-                    <li class="mr-10"><a href="#contact" class="text-gray-800 hover:text-gray-400" style="text-decoration: none;">Contact</a></li>
-                </ul>
+    <header class="" style="">
+            <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="" class="h-8" alt="Tbiz Image" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tbiz Portfolio</span>
+                    </a>
+                    <button data-collapse-toggle="navbar-solid-bg" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-solid-bg" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                        <ul
+                            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                            <li>
+                                <a href="#home"
+                                    class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#resume"
+                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#projects"
+                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#form"
+                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
     </header>
     <main class="my-3" id="home">
         <section style="background-image: url(img/portfolio.jpg); background-size:cover; height: 100vh; position:relative;">
-            <h1 class="text-4xl font-serif font-bold" style="color: rgb(64, 60, 77); text-align: right; padding-top: 20%; position: absolute; left: 15px; top: 0px;">Tobi Ogungbe</h1>
-            <h5 class="text-left text-gray-800" style="position: absolute; left: 15px; top: 350px; width: 400px; height: 200px;">I am a Freelance Software Developer, Data Scientist</h5>
-            <p class="font-serif text-gray-800" style="position: absolute; left: 15px; top: 380px; width: 450px; height: 200px;">Hello! I'm a web developer with a passion for creating interactive and user-friendly applications. I love coding and learning new technologies.</p>
+        <div class="absolute inset-0 bg-black opacity-50">
+            <h1 class="text-4xl font-serif font-bold text-gray-200" style="text-align: right; padding-top: 20%; position: absolute; left: 15px; top: 0px;">Tobi Ogungbe</h1>
+            <h5 class="text-left text-gray-200" style="position: absolute; left: 15px; top: 350px; width: 400px; height: 200px;">I am a Freelance Software Developer, Data Scientist</h5>
+            <p class="font-serif text-gray-200" style="position: absolute; left: 15px; top: 380px; width: 450px; height: 200px;">Hello! I'm a web developer with a passion for creating interactive and user-friendly applications. I love coding and learning new technologies.</p>
+        </div>
         </section>
-        <section class="bg-gray-200 py-8 my-3" id="summary" style="display: flex; justify-content: center; align-items: center;" >
+
+        <section class="bg-gray-100 py-8 my-3" id="summary" style="display: flex; justify-content: center; align-items: center;">
             <div class="px-4 bg-gray-800 text-center" style="max-width: 1000px;">
                 <h1 class="py-3 font-sans text-2xl font-bold text-white">Summary</h1>
                 <p class="font-sans text-white">An IT Business Analyst and Data Scientist with multiple years of experience delivering business solutions that improve the service level performance of different government entities. My exposure to the Chartered Financial Analyst Program has given me insights into the business world, which further enhances my ability to apply IT-related procedures in solving real business problems. As a data scientist, I have had the opportunity of using statistical procedures to show breaches in project contracts. In cases that require predictions, applied business logic in developing machine learning algorithms that more often achieve higher accuracy rates. I am currently expanding my knowledge; exploring how to design, develop, deploy, and manage robust, secure, scalable, highly available and highly dynamic cloud solutions that can be used to drive business objectives</p>
             </div>
         </section>
-        <section class="my-4" id="bio-data">
+        <section class="container my-4 mx-5" id="bio-data">
             <h1 class="text-center text-3xl font-serif font-bold">Bio Data</h1>
             <h4 class="text-center text-1xl font-serif font-bold">Software Developer</h4>
-            <div class="py-8 my-3" style="display: flex; justify-content: flex-start; align-items: center;">
-                <div class="max-w-sm rounded-lg shadow-lg  px-5 mr-10" style="width: 300px; height: 300px; display: flex; justify-content: center; align-items: center;">
-                    <img src="img/Profile-Picture.jpg" alt="Profile Picture" class="w-auto h-auto ml-7" style="border-radius: 15px;">
+            <div class="py-8 my-3 flex sm:flex-col md:flex-row justify-start items-center">
+                <div class="max-w-md md:min-w-50 rounded-lg shadow-lg  px-5 py-5 mr-10 w-100">                
+                <img src="img/Profile-Picture.jpg" alt="Profile Picture" class="w-auto h-auto ml-7" style="border-radius: 15px;">
                 </div>
-                <div class="px-4" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                <div class="max-w-100 mx-10">
+                <div class="px-4 mx-5 my-5 sm:flex sm:flex-col md:flex-row justify-center items-center">
+                <div class="max-w-100 sm:min-w-80 mx-10">
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3">&#10004;</span><strong>Date of Birth: </strong>May 16 1983</h4>
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Wesbite: </strong>www.example.com</h4>
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Phone: </strong>+234 8060876919</h4>
@@ -49,7 +79,7 @@
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Country: </strong>Nigeria</h4>
                     
                 </div>
-                <div class="max-w-200 mx-10 text-left" style="border-radius: 5px;">
+                <div class="sm:max-w-200 sm:min-w-100 mx-10 text-left" style="border-radius: 5px;">
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3">&#10004;</span><strong>Age: </strong>42</h4>
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Qualifications: </strong>Bsc. Computer Science, MSc. Software Engineering</h4>
                     <h4 class="text-1xl font-bold text-black my-5"><span class="mx-3 my-3">&#10004;</span><strong>Exams & Certifications: </strong>CFA Exam (Passed L1 & L2), GCloud, DSBA PGD, CITP - Nigeria.</h4>
@@ -65,7 +95,7 @@
         <section class="my-4 bg-blue-100 py-10 mx-5" id="skills">
             <h1 class="text-2xl px-5 font-bold font-serif text-center py-5">Skills</h1>
             <p class="font-serif text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae, aspernatur nostrum recusandae eligendi ex est aperiam provident doloribus totam.</p>
-            <div class="flex flex-row justify-evenly mx-10 my-5">
+            <div class="flex sm:flex-col md:flex-row justify-evenly mx-10 my-5">
                 <div class="w-full px-5">
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-black dark:text-white">HTML</span>
@@ -86,7 +116,7 @@
                 </div>
             </div>
             <!--HTML CSS Skill-->
-            <div class="flex flex-row justify-evenly mx-10 my-5">
+            <div class="flex sm:flex-col md:flex-row justify-evenly mx-10 my-5">
                 <div class="w-full px-5">
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-black dark:text-white">R - Data Science Programming</span>
@@ -107,7 +137,7 @@
                 </div>
             </div>
             <!--HTML CSS Skill-->
-            <div class="flex flex-row justify-evenly mx-10 my-5">
+            <div class="flex sm:flex-col md:flex-row justify-evenly mx-10 my-5">
                 <div class="w-full px-5">
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-black dark:text-white">SQL & NoSQL</span>
@@ -128,7 +158,7 @@
                 </div>
             </div>
             <!--HTML CSS Skill-->
-            <div class="flex flex-row justify-evenly mx-10 my-5">
+            <div class="flex sm:flex-col md:flex-row justify-evenly mx-10 my-5">
                 <div class="w-full px-5">
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-black dark:text-white">Financial Statement Analysis</span>
@@ -149,7 +179,7 @@
                 </div>
             </div>
             <!--HTML CSS Skill-->
-            <div class="flex flex-row justify-evenly mx-10 my-5">
+            <div class="flex sm:flex-col md:flex-row justify-evenly mx-10 my-5">
                 <div class="w-full px-5">
                     <div class="flex justify-between mb-1">
                         <span class="text-base font-medium text-black dark:text-white">Javascript & Javascript Frameworks</span>
@@ -171,8 +201,8 @@
             </div>
         </section>
         <!-- Resume Section -->
-        <section class="mx-5" id="resume">
-            <div class="flex flex-row justify-center">
+        <section class="mx-5 my-8" id="resume">
+            <div class="flex sm:flex-col md:flex-row justify-center">
                 <div class="bg-blue-100 w-full">
                     <div class="py-3 my-3 px-3 hover:border-l-3 hover:border-gray-600 hover:cursor-pointer">
                         <h1 class="text-2xl font-bold font-serif">About</h1>
@@ -222,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-blue-200 w-full ml-3">
+                <div class="bg-blue-200 w-full my-5">
                     <div class="py-3 my-3 px-3">
                         <h1 class="text-2xl font-bold font-serif">Professional Experience</h1>
                         <div class="px-5 hover:border-l-3 hover:border-gray-600 hover:cursor-pointer">
@@ -414,7 +444,7 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-row mx-5" id="form">
+        <section class="flex sm:flex-col md:flex-row mx-5" id="form">
             <div class="flex flex-col justify-center items-center w-full bg-white mr-2 pb-4" style="max-width: 800px;">
                 <img src="img/Contact-section.jpg" alt="Contact Section" class="object-contain px-4 text-center"
                     style="width: 70%; height:auto; align-items:center;">
